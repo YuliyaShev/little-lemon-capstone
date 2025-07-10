@@ -1,12 +1,12 @@
-// BookingPage.js
 import React from "react";
+import BookingForm from "./BookingForm";
 
 function BookingPage() {
   return (
-    <main>
+    <div>
       <h1>Reserve a Table</h1>
-      <p>Book your table easily through this page.</p>
-    </main>
+      <BookingForm />
+    </div>
   );
 }
 

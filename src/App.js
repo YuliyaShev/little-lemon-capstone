@@ -1,3 +1,5 @@
+import "./App.css";
+
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./Nav";
@@ -11,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/booking" element={<BookingPage />} />
-        {/* Add other routes here */}
       </Routes>
     </>
   );
