@@ -11,3 +11,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Darker text color for readability */
+  margin: 1rem 0 0.5rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 0.5rem 0 1rem;
+}
+
+span {
+  color: #f4a261; /* Little Lemon accent color */
+  font-weight: 600;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #f4f1de; /* Light neutral background */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center navigation items */
+}
+
+nav li {
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #264653; /* Deep blue/green */
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #f4a261; /* Accent color on hover/focus */
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Slight rounding */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
